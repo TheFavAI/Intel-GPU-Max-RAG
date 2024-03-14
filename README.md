@@ -8,9 +8,10 @@ You'll need Docker to run it easily as Intel containers are the best way to ensu
 
 ## Installation
 Here is the Pre-requisite steps to run it:
-1. Install docker `sudo apt install -y docker.io`
-2. Pull the Intel PyTorch docker for Intel DC GPU 
-`sudo docker pull intel/intel-extension-for-pytorch:2.1.10-xpu`
+1. Install docker <br />
+`sudo apt install -y docker.io`<br />
+2. Pull the Intel PyTorch docker for Intel DC GPU <br />
+`sudo docker pull intel/intel-extension-for-pytorch:2.1.10-xpu`<br />
 3. Run the container exposing the correct ports to access Streamlit on your browse <br />
 `sudo docker run --expose 8501 -p 8501:8501 -it -u root --privileged --device=/dev/dri -v /home/:/home/ --ipc=`<br />
 4. Install the dependencies <br />
